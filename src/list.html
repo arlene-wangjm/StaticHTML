@@ -15,7 +15,7 @@
 	<div class="wrapper">
 		<div class="stick-header">	
 			<!-- navbar begin -->
-			<div class="row align-middle nav-bar" style="width:100%">
+			<div class="row align-middle nav-bar">
 			  <div class="columns small-4">
 			  	<i class="fa fa-home" aria-hidden="true"></i>
 			  </div>
@@ -27,18 +27,49 @@
 			<!-- navbar end -->
 
 			<!-- topic begin -->
-			<div class="row align-middle channel" style="width:100%; background-color:white;">
-			  <div class="columns text-center">
-			  	<div class="item">
+			<div class="row align-middle channel" style="background-color:#fff;">
+			  <div class="columns small-12 text-center">
+			  	<div class="item" id="recommend">
 			  		推荐 <i class="fa fa-caret-down" aria-hidden="true"></i>
 			  	</div>
-			  	<div class="item">
+			  	<div class="item" id="all">
 			  		全部 <i class="fa fa-caret-down" aria-hidden="true"></i>
 			  	</div>
 			  </div>
 			</div>
 			<!-- topic end -->
+
+			<div class="row topic recommend">
+				<div class="columns">
+					<ul>
+				  		<li><a href="#" class="active">
+				  			<!-- <i class="fa fa-check" aria-hidden="true"></i> -->景点</a>
+				  		</li>
+				  		<li class="divider"></li>
+				  		<li><a href="#">地区</a></li>
+				  		<li class="divider"></li>
+				  		<li><a href="#">综合</a></li>
+				  	</ul>
+				</div>
+			</div>
+			<div class="row topic all">
+				<div class="columns">
+					<ul>
+				  		<li><a href="#" class="active">
+				  			<!-- <i class="fa fa-check" aria-hidden="true"></i> -->景点1</a>
+				  		</li>
+				  		<li class="divider"></li>
+				  		<li><a href="#">地区1</a></li>
+				  		<li class="divider"></li>
+				  		<li><a href="#">综合1</a></li>
+				  	</ul>
+				</div>
+			</div>
 		</div><!-- /.stick-header -->
+
+		
+
+
 
 		<div class="row media-list">
 			<div class="columns small-12 medium-6">
@@ -236,5 +267,9 @@
 		  </div>
 		</div><!-- .row -->
 	</div><!-- .footer -->
+
+	<script src="./script/jquery-3.0.0.min.js"></script>
+	<script src="./script/list.js"></script>
+	
 </body>
 </html>

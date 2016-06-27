@@ -6,16 +6,24 @@
 }
 .nav-bar{
 	height: 2em;
+      width: 100%;
 	background-color: #2199e8;
       color: #fefefe;
+}
+.nav-bar .fa{
+      font-size: 1.2rem;
+}
+.nav-bar .fa.fa-chevron-left{
+      font-size: 0.9rem;
 }
 .nav-bar a{
       color: #fefefe;
 }
 .channel{
 	height: 2em;
+      width:100%; 
 	border-bottom: 1px solid #cacaca;
-	barckground-color:white;
+	barckground-color:#fff;
 	transparent:none;
 }
 .channel .item{
@@ -26,8 +34,43 @@
 .item:first-child{
 	border-right: 1px solid #cacaca;
 }
+.topic{
+      display: none;
+}
+.topic ul{
+      list-style: none;
+      background-color:#fff;
+      margin-left: 0;
+}
+.divider{
+    height: 1px;
+    margin: 0.3rem 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+.topic ul li{
+      padding-left: 3rem;
+}
+.topic ul li:first-child{
+      padding-top:0.3rem;
+}
+.topic ul li:last-child{
+      margin-bottom:0.3rem;
+}
+.topic ul a{
+      color: #000;
+}
+.topic ul a.active{
+      color: #2199e8;
+}
 .media-list{
 	padding-top: 4em;
+}
+.media-list .media-object-section:first-child{
+      width: 40%;
+}
+.media-list .media-object-section:last-child{
+      width:60%;
 }
 .media-object{
 	margin-top:0.5rem;
@@ -63,7 +106,7 @@
 	width: 100%;
 	position:fixed;
 	bottom:0;
-	height:2.5rem;
+	padding: 0.2em 0;
 	background-color:white;
 }
 .footer-text{
@@ -75,6 +118,11 @@
 }
 .footer .active, .address .active{
 	color: #2199e8;
+}
+.footer.buy{
+      background-color: #ffae00;
+      color: #fefefe;
+      font-weight: bold;
 }
 .intro{
 padding-top:2em;
@@ -97,7 +145,6 @@ margin-bottom: 1em;
       display: inline-block;
       left:50%;
       bottom:0.5rem;
-      //border-bottom: 1px solid #cacaca;
 }
 .grade .badge{
       font-size:0.7rem;
@@ -107,12 +154,12 @@ margin-bottom: 1em;
       padding-bottom:0.5rem;
       border-bottom: 1px solid #cacaca;
 }
-.intro .description .left{
+.intro .description .left, .store .title, .comment .title{
       font-size: 0.9rem;
       font-weight: bold;
       color: #ffae00;
 }
-.intro .description .right{
+.intro .description .right, .store .detail{
       font-size: 0.7rem;
 }
 .description a{
@@ -149,4 +196,54 @@ margin-bottom: 1em;
       color: #fff;
       font-size: 0.6rem;
       text-decoration: underline;
+}
+.store{
+      margin: 0.5rem 0;
+}
+/*.store .title{
+      background-color: #cacaca;
+}*/
+.comment .content{
+      margin: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 0.1rem;
+}
+.comment .content,.comment .info{
+      font-size: 0.7rem;
+}
+.comment .content .media-object{
+      border-bottom: 0;
+}
+.comment .content .media-object-section:first-child{
+      width:auto;
+}
+.comment .content .arrow{
+      background-color: #cacaca;
+      border-radius:0.1rem 0.1rem 0.1rem 0.1rem;
+      position:relative;
+}
+.comment .content-item .thumbnail{
+      width:2rem;
+      height:2rem;
+}
+.arrow:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: inset 0.5rem;
+    border-color: #cacaca transparent transparent;
+    border-top-style: solid;
+    border-bottom-width: 0;
+    top: 100%;
+    bottom: auto;
+    left:80%;  
+}
+.comment .more{
+      color: #2199e8;
+      border: 1px solid #2199e8;
+      border-radius: 0.4em;
+      font-size: 0.8rem;
+      margin-bottom:2rem;
 }

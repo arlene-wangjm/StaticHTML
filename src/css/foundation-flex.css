@@ -2792,18 +2792,15 @@ select {
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto; 
-          //width: 50%;
-          //height: 5rem;
         }
   .media-object-section:first-child {
     //padding-right: 1rem;
-    padding-left:0.5rem;
-    width:40%;}
+    padding-left:0.5rem;}
   /*.media-object-section:last-child:not(:nth-child(2)) {
-    padding-left: 1rem; }*/
+    padding-left: 1rem; }
     .media-object-section:last-child{
       width:60%;
-    }
+    }*/
   .media-object-section > :last-child {
     margin-bottom: 0;
     margin-right:0.5em;}
