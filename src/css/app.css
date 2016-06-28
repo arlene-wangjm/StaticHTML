@@ -89,7 +89,10 @@
 	color: #ffae00;
 }
 .star-gray{
-	color: #cacaca;;
+	color: #cacaca;
+}
+.star-shallow-gray{
+      color: #aaa;
 }
 .label-left{
 	display: inline-block;
