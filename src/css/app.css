@@ -85,6 +85,9 @@
 	background-color: #ffae00;
       color: #fefefe;
 }
+.red{
+  color: #ec5840;
+}
 .star-yellow{
 	color: #ffae00;
 }
@@ -127,7 +130,7 @@
       color: #fefefe;
       font-weight: bold;
 }
-.intro{
+.intro, .pay{
 padding-top:2em;
 margin-bottom: 1em;
 }
@@ -203,9 +206,6 @@ margin-bottom: 1em;
 .store{
       margin: 0.5rem 0;
 }
-/*.store .title{
-      background-color: #cacaca;
-}*/
 .comment .content{
       margin: 0.5rem;
       padding: 0.5rem;
@@ -213,6 +213,9 @@ margin-bottom: 1em;
 }
 .comment .content,.comment .info{
       font-size: 0.7rem;
+}
+.comment .media-object-section.info > :last-child {
+    margin-right:0;
 }
 .comment .content .media-object{
       border-bottom: 0;
@@ -250,3 +253,27 @@ margin-bottom: 1em;
       font-size: 0.8rem;
       margin-bottom:2rem;
 }
+
+.pay form{
+  padding: 0.5rem 0.5rem;
+}
+.pay-title{
+  margin-bottom: 0.5em;
+}
+.pay .deal-item, .discount, .discount-coupon{
+  border-bottom: 1px solid #cacaca;
+  margin-top: 0.56rem;
+}
+i.delete{
+  margin-top:1rem;
+}
+.real-charge .tip, .real-charge .callout{
+  font-size: 0.6rem;
+}
+.pay .special{
+  font-size: 0.8rem;
+}
+label.four-words{
+  //letter-spacing: 0.333em;
+}
+

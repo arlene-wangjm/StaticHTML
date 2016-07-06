@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>购买页面</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="icon" type="image/png" href=""/>
+    <link rel="apple-touch-icon" sizes="" href=""/>
+
+    <link href="./css/foundation-flex.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/app.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="stick-header">	
+		<!-- navbar begin -->
+		<div class="row align-middle nav-bar" style="width:100%">
+		  <div class="columns small-3">
+		  	<a href="list.html"><i class="fa fa-chevron-left" aria-hidden="true"></i>返回</a>
+		  </div>
+		  <div class="columns small-7 text-center">买单提交</div>
+		  <div class="columns small-2 text-right">
+		  	<i class="fa fa-home" aria-hidden="true"></i>
+		  </div>
+		</div>
+		<!-- navbar end -->
+	</div><!-- /.stick-header -->
+
+	<!-- pay begin-->
+	<div class="pay">
+		<div id="clone-template" class="is-hidden">
+			<div class="deal-item">
+			<div class="row align-middle">
+				<div class="samll-4 columns">
+					<label for="first" class="text-right middle">消费金额：</label>
+				</div>
+				<div class="small-7 columns">
+					<input type="text" name="charge0" placeholder="请输入金额">
+				</div>
+				<div class="small-1 columns align-top">
+					<button type="button" class="delete-deal"><i class="fa fa-minus-square delete" aria-hidden="true"></i></button>
+				</div>
+			</div><!-- /.row -->
+			<div class="row align-middle">
+				<div class="samll-4 columns">
+					<label for="info" class="text-right middle">商品信息：</label>
+				</div>
+				<div class="small-7 columns">
+					<textarea name="info0" cols="10" rows="2" placeholder="商品信息"></textarea>
+				</div>
+				<div class="small-1"></div>
+			</div><!--  /.row -->
+			</div> 
+		</div><!-- /.clone-item -->
+		<form action="#">
+			<div class="row align-middle">
+				<div class="samll-11 columns">
+					<span class="pay-title">请输入实际消费的金额</span>
+				</div>
+				<div class="small-1 columns">
+					<button type="button" id="add"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+				</div>
+			</div><!-- /.row -->
+			<div id="deal">
+			<div class="deal-item">
+				<div class="row align-middle">
+					<div class="samll-4 columns">
+						<label for="charge" class="text-right middle">消费金额：</label>
+					</div>
+					<div class="small-7 columns">
+						<input type="text" name="charge1" placeholder="请输入金额">
+					</div>
+					<div class="small-1 columns"></div>
+				</div><!-- /.row -->
+				<div class="row align-middle align-left">
+					<div class="samll-4 columns">
+						<label for="info" class="text-right middle">商品信息：</label>
+					</div>
+					<div class="small-7 columns">
+						<textarea name="info1" cols="10" rows="2" placeholder="商品信息"></textarea>
+					</div>
+					<div class="small-1 columns"></div>
+				</div><!-- /.row -->
+			</div><!-- /.deal-item -->
+			
+		</div><!-- /.deal -->
+
+		<div class="discount">
+			<div class="row align-middle">
+				<div class="samll-4 columns">
+					<label for="info" class="text-right middle four-words">优惠码：</label>
+				</div>
+				<div class="small-7 columns">
+					<input type="text" name="discount-code" placeholder="请输入优惠码">
+				</div>
+				<div class="small-1"></div>
+			</div>
+			<div class="row align-middle">
+				<div class="samll-4 columns">
+					<label for="info" class="text-right middle">消费合计：</label>
+				</div>
+				<div class="small-7 columns">
+					<label class="text-right middle">300泰铢 = 600人民币</label>
+				</div>
+				<div class="small-1"></div>
+			</div>
+		</div><!-- /.discount -->
+
+		<div class="discount-coupon">
+			<div class="row align-middle">
+				<div class="samll-4 columns">
+					<label class="text-right middle">选择优惠券</label>
+				</div>
+				<div class="small-8 columns">
+					<label class="text-right middle"><a href="#" class="star-yellow">0张可用</a></label>
+				</div>
+			</div>
+		</div><!-- /.discount-coupon -->
+
+		<div class="real-charge">
+			<div class="row align-top">
+				<div class="samll-4 columns">
+					<label class="text-right middle">实付金额：</label>
+				</div>
+				<div class="small-8 columns">
+					<label class="text-right middle">
+						<span class="star-yellow">泰铢: 0</span> = <span class="red">人民币: 0</span><br/>
+						<span class="tip">当前汇率：1人民币=5.1852泰铢</span>
+					</label>
+				</div>
+			</div>
+			<div class="callout warning small">
+			  <p>本店每个用户最高享受优惠2000B，你的优惠额度还有2000B。</p>
+			</div>
+		</div>
+
+		</form>
+
+		<div class="special">
+			<div class="row">
+				<div class="small-12 columns">
+					<label for="">消费说明</label>
+				</div>
+			</div>
+			<div class="row align-right">
+				<div class="small-11 columns">
+					<p>
+						行者旅行的买单说明，关于积分反馈以及后续的积分使用方法等
+						<br/>
+						行者旅行的买单说明，关于积分反馈以及后续的积分使用方法等
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- pay end -->
+
+	<div class="footer buy">
+		<div class="row align-middle">
+		  <div class="small-12 columns text-center">
+		  	<span class="">买单</span>
+		  </div>
+		</div><!-- .row -->
+	</div><!-- .footer -->
+
+	<script src="./script/jquery-3.0.0.min.js"></script>
+	<script src="./script/buy.js"></script>
+</body>
+</html>
